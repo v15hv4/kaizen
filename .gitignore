@@ -4,3 +4,4 @@
 
 .venv/
 bot/__pycache__
+bot/modules/__pycache__
