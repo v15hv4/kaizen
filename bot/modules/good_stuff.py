@@ -20,7 +20,7 @@ async def dadjoke(client, message):
     head = response["data"]["children"][pick]["data"]["title"]
     body = response["data"]["children"][pick]["data"]["selftext"]
 
-    await message.reply(f"*{head}*\n{body}", parse_mode=enums.ParseMode.MARKDOWN)
+    await message.reply(f"**{head}**\n{body}", parse_mode=enums.ParseMode.MARKDOWN)
 
 
 # look up the definition of the target query on UrbanDictionary
