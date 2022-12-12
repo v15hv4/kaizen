@@ -52,3 +52,11 @@ async def define(client, message):
 
     except:
         await message.reply(r"¯\_(ツ)_/¯")
+
+
+# send the /s copypasta when detected
+@app.on_message(filters.regex(r"(^| )/s($| )"))
+async def fuckthes(client, message):
+    await message.reply(
+        "Fuck off with your stupid little shitty /s tags, they ruin reddit. They are cancer, they are absolute shit. Don't you fucking dare use stupid /s tags because they are literally terrible and I do not approve of them at all. Get rid of them and stop using /s tags because they are literally the worst thing of this here site. Yes, we do get sarcasm, we don't actually think that you were being serious and you actually managed to ruin your own stupid little insignificant joke."
+    )
