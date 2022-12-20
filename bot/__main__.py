@@ -3,7 +3,7 @@ import requests
 from pyrogram import filters
 
 from bot import app
-from bot.modules import good_stuff, sed
+from bot.modules import good_stuff, sed, gpt3
 
 
 # send the user a random greeting
