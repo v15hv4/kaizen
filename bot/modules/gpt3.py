@@ -9,7 +9,9 @@ from pyrogram import enums, filters
 # respond using a GPT-3 model
 @app.on_message(filters.mentioned)
 async def gpt3chat(client, message):
-    if message.text.strip()[0] == "@":
+    query = message.text.strip()
+
+    if query[0] == "@":
         query = " ".join(message.text.split()[1:]).strip()
 
     if len(query):
